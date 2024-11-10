@@ -1,0 +1,62 @@
+/* Navbar.css */
+
+.nav {
+    display: flex;
+    justify-content: flex-start; /* Align the content to the left */
+    align-items: center; /* Vertically center the content */
+    padding: 15px;
+    background-color: #054207; /* Example background color */
+    position: relative; /* Positioning context for absolute positioning */
+    width: 100%; /* Ensure the navbar spans the full width */
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center; /* Align logo and nav items horizontally */
+  }
+  
+  .logo-image {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Space between logo and nav items */
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-items {
+    margin-right: 5px; /* Space between nav items */
+    color: white;
+    cursor: pointer;
+    font-size: 14.8px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    margin-left: 28px;
+  }
+  
+  .nav-items:hover {
+    color: #ff7f50; /* Change color on hover */
+  }
+  
+  /* This class positions the logo image to the top right */
+  .nav-right {
+    position: absolute; /* Position it relative to the navbar */
+    top: 0; /* Align it to the top */
+    right: 0; /* Set it to the far right edge */
+  }
+  
+  .nav-right img {
+    width: 90px; /* Set the size of the right image */
+    height: auto;
+    margin: 0; /* Remove margin if any */
+  }
+  .phone-number {
+    color: white;
+    margin-left: 35%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+  }

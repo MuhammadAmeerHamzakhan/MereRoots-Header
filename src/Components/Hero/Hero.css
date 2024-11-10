@@ -1,0 +1,68 @@
+.hero {
+    margin: 0 120px;
+    margin-top: 270px;
+    position: relative; /* Ensure position context for any child elements */
+    z-index: 1; /* Ensure the content stays on top of the background */
+}
+
+.hero-text {
+    position: relative;
+    text-align: center;
+    z-index: 2; /* Ensure text is above the overlay */
+    color: white;
+    padding: 30px;
+}
+
+.hero-heading {
+    font-size: 6rem; /* Larger font size for heading */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between heading and subheading */
+    text-transform: uppercase; /* Optional: Uppercase text for a bold look */
+    line-height: 1; /* Adjust line height for better spacing */
+}
+
+.hero-subheading {
+    font-size: 1.5rem; /* Smaller font size for subheading */
+    font-weight: 400;
+    margin-top: 0; /* Remove default margin */
+    padding-top: 0; /* Remove any additional padding */
+    position: relative;
+    top: -10px; /* Move the subheading slightly up */
+    transition: transform 0.3s ease-in-out; /* Optional: Smooth transition effect */
+}
+
+/* Hero dots */
+.hero-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px; /* Adds space between dots */
+    list-style: none;
+    padding: 0;
+}
+
+.hero-dot {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px; /* Adds horizontal space between the dots */
+    transition: background-color 0.3s ease;
+}
+
+.hero-dot.orange {
+    background-color: #6bfd00; /* Highlighted dot color */
+}
+
+/* Ensure the Hero background does not overflow */
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: inherit; /* Use the same background from Hero */
+    z-index: -1; /* Place the background below the content */
+}

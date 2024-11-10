@@ -1,0 +1,69 @@
+/* src/Components/ServicesPage/ServicesPage.css */
+
+/* Overall container for the services page */
+.services-page-container {
+    background-color: #f8f8f8; /* Light background for content section */
+    padding: 60px 20px;
+    max-width: 1000px; /* Ensures content stays within a max width */
+    margin: 0 auto; /* Centers the content */
+}
+
+/* Title of the section */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333; /* Dark gray for a professional look */
+    margin-bottom: 20px;
+}
+
+/* Main text for the section */
+.section-text {
+    font-size: 1.1rem;
+    color: #555; /* Lighter gray for better readability */
+    line-height: 1.8; /* Better spacing between lines */
+    margin-bottom: 40px; /* Adds space below the paragraph */
+}
+
+/* Container for the services list section */
+.services-section {
+    margin-top: 40px; /* Adds space between sections */
+}
+
+/* Flexbox container to align service items in rows */
+.services-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to new lines */
+    gap: 20px; /* Space between items */
+    justify-content: space-between; /* Distributes items evenly */
+}
+
+/* Individual service item container */
+.service-item {
+    background-color: white; /* White background for service item */
+    padding: 20px; /* Adds padding inside service box */
+    border-radius: 8px; /* Rounded corners for service item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 30%; /* Ensures 3 items per row */
+    min-width: 280px; /* Ensures minimum width for smaller screens */
+    transition: transform 0.3s ease; /* Adds smooth transition effect */
+}
+
+/* Hover effect on service item */
+.service-item:hover {
+    transform: translateY(-10px); /* Moves item up when hovered */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Increases shadow on hover */
+}
+
+/* Title inside each service item */
+.service-item h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Text description inside each service item */
+.service-item p {
+    font-size: 1rem;
+    color: #666; /* Slightly lighter gray for readability */
+    line-height: 1.6; /* Line height for easy reading */
+}
